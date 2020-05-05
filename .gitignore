@@ -4,3 +4,5 @@ release/*
 /lt2ti_Prj.wpu
 /gone/
 /test_lt2ti.log
+*.aux
+*.log

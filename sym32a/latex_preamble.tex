@@ -62,13 +62,15 @@
 	/tikz/circuitikz/bipoles/fullgeneric/voltage/straight label distance/.initial=.8,
 	/tikz/circuitikz/bipoles/capacitor/voltage/straight label distance/.initial=1.0,
 	/tikz/circuitikz/bipoles/thickness=1.6,
+  transistors/scale=1.618
 }
 \ctikzset{v/.append style={/tikz/european voltages}}
 
-\definecolor{netlabelcolor}{rgb}{0, 0, 0.25}
-\definecolor{lttotitextcolor}{rgb}{0, 0.4, 0.25}
-\definecolor{lttotidrawcolor}{rgb}{0.6, 0.6, 0.6}
-\definecolor{netcolor}{rgb}{0, 0, 0.5}
+\definecolor{netlabelcolor}{HTML}{339af0}
+\definecolor{componentLabelColor}{HTML}{495057}
+\definecolor{lttotitextcolor}{HTML}{a5d8ff}
+\definecolor{lttotidrawcolor}{HTML}{a5d8ff}
+\definecolor{netcolor}{HTML}{343a40}
 
 \pgfkeys{/lt2ti/netlabel/font/.initial= \small}
 \pgfkeys{/lt2ti/text/font/.initial= \small}
@@ -81,6 +83,6 @@
 
 \begin{document}%
 	%\centering%
-		\begin{tikzpicture}[circuit ee IEC, scale=0.6666666667,line width=.5pt]% default: 0.4
+		\begin{tikzpicture}[circuit ee IEC, scale=0.6666666667,line width=.5pt, color=netcolor, /tikz/text=componentLabelColor]% default: 0.4
 	%\tikzstyle{every node}=[font=\small];%
 	%\node [draw] at (0.0,0.0) {\pgfkeysvalueof{/tikz/circuitikz/tripoles/op amp/font}};
